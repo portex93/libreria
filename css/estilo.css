@@ -1,0 +1,127 @@
+/* tipografia del logo Berlin Sans FB */
+
+#principal {
+    text-align: center;
+    position: relative;
+    font-family:"miFuente";
+    
+        
+}
+
+@font-face {
+    font-family:"miFuente";
+    src: url(../fuente/Berlin\ Sans\ FB\ Regular.ttf);
+}
+
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    font-size: 24px;
+}
+
+img {
+    max-width: 30rem;
+    max-height: 30rem;
+    
+}
+
+@media (min-width:480px) {
+.productosGrid {
+    display: grid;
+    grid-template-columns: 80px;
+    grid-template-areas:
+    "section nav"
+    "header header"
+    "main main"
+    "footer footer"
+    ;   
+    }
+    .contenedorGrid {
+        display: grid;
+        grid-template-columns: 80px;
+        grid-template-areas:
+        "section nav"
+        "header header"
+        "main main"
+        "footer footer";
+        
+    }
+}
+
+
+a {
+    text-decoration: none;
+    border: 2px solid black;
+    margin: 5px;
+    padding: 10px;
+    color: aliceblue;
+    border-radius: 8px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header {
+    background-color: aqua;
+    grid-area: header;
+    padding: 10px;
+}
+
+nav {
+    background-image: linear-gradient(to right, #000000, #361420, #69193b, #9f1859, #d90879);
+    grid-area: nav;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    
+}
+
+main {
+    background-color:coral;
+    grid-area: main;
+    padding: 10px;
+
+}
+
+footer {
+    background-color: chartreuse;
+    grid-area: footer;
+    padding: 10px;
+}
+
+section {
+    background-color:#000000;
+    grid-area: section;
+    display: flex;
+    justify-content: center; 
+    
+}
+
+.botonWsp {
+    max-width: 3rem;
+    max-height: 3rem;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+
+}
+
+.logoMenu {
+    max-width: 5rem;
+    max-height: 5rem;
+    top: 50%;
+    display: flex;
+    align-content: center;
+    
+}
+
+    
+  

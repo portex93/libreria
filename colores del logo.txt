@@ -1,0 +1,3 @@
+109DDB = cyan
+D90879 = magenta
+FFE60D = amarillo
