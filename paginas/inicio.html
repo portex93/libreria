@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="principal" lang="es">
+<html lang="es" class="text-center">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,24 +14,35 @@
     />
     <link rel="stylesheet" href="../css/estilo.css" />
   </head>
-  <body class="contenedorGrid">
+  <body class="container-fluid">
     <header>
-      <h1>Libreria Graffitti</h1>
+          <h1>Libreria Graffitti</h1>
     </header>
     <nav>
-      <ul>
-        <li><a href="inicio.html">Inicio</a></li>
-        <li><a href="productos.html">Productos</a></li>
-        <li>
-          <a href="quienes somos.html">Quienes somos</a>
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active color" aria-current="page" href="inicio.html">Inicio</a>
         </li>
-        <li><a href="ingresar.html">Ingresar</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+        <li class="nav-item">
+          <a class="nav-link color" href="productos.html">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link color" href="quienes somos.html">Quienes somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link color" href="ingresar.html">Ingresar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link color" href="contacto.html">Contacto</a>
+        </li>
       </ul>
     </nav>
+
+      <div class="d-flex justify-content-center">
+
       <div
         id="carouselExampleControls"
-        class="carousel slide"
+        class="carousel slide carrosuleDelinicio"
         data-bs-ride="carousel"
       >
         <div class="carousel-inner">
@@ -231,6 +242,8 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+
+    </div>
     <main>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt
@@ -239,9 +252,9 @@
         quasi at.
       </p>
     </main>
-    <img src="../imagenes/wsp icono.png" alt="boton de wsp" class="botonWsp" />
+    <img src="../imagenes/wsp icono.png" alt="boton de wsp" class="wsp"/>
     <section>
-      <img src="../imagenes/logo menu.png" alt="logo" class="logoMenu" />
+      <img src="../imagenes/logo menu.png" alt="logo" class="logo"/>
     </section>
     <footer>
       <h2>Todos los derechos reservados 2022</h2>

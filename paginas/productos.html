@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="principal" lang="es">
+<html lang="es" class="text-center">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,51 +13,94 @@
       crossorigin="anonymous"
   </head>
   <link rel="stylesheet" href="../css/estilo.css" />
-  <body class="productosGrid">
+  <body class="container-fluid bodyGrid">
     <header>
       <h1>Productos</h1>
     </header>
     <nav>
       <ul>
-        <li><a href="inicio.html">Inicio</a></li>
-        <li><a href="productos.html">Productos</a></li>
-        <li><a href="quienes somos.html">Quienes somos</a></li>
-        <li><a href="ingresar.html">Ingresar</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active color" aria-current="page" href="inicio.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link color" href="productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link color" href="quienes somos.html">Quienes somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link color" href="ingresar.html">Ingresar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link color" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
     </nav>
-    <main class="galeria">
-      <div>
-        <img src="../imagenes/1.jpg" alt="Marcadores al agua Trabis" />
-        <br /><br />
-        Marcadores al agua Trabis
+    <main>
+
+      <div class="d-flex justify-content-center row">
+
+      <div class="card col-xl-3 col-md-6 col-sm-12" style="width: 18rem;">
+        <img src="../imagenes/1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Marcadores al agua Trabi</h5>
+          <p class="card-text">Marcadores 420 plus recargables contiene 20 unidades en una valija de pvc</p>
+          <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
       </div>
-      <div>
-        <img src="../imagenes/2.jpg" alt="Oleos de 18 mm Alba" /> <br /><br />
-        Oleos de 18 mm Alba
+
+      <div class="card col-xl-3 col-md-6 col-sm-12" style="width: 18rem;">
+        <img src="../imagenes/2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Oleos Alba</h5>
+          <p class="card-text">Variedad de colores,dependiendo su GRUPO varia su precio (pomos de 18ml-60ml-125ml)</p>
+          <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
       </div>
-      <div>
-        <img src="../imagenes/3.jpg" alt="Acuarelas x36 Giotto" /> <br /><br />
-        Acuarelas x36 Giotto
+
+      <div class="card col-xl-3 col-md-6 col-sm-12" style="width: 18rem;">
+        <img src="../imagenes/3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Acuarelas Giotto</h5>
+          <p class="card-text">Mini-maletin de 36 colores,incluye un pincel sintetico</p>
+          <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
       </div>
-      <div>
-        <img src="../imagenes/4.jpg" alt="Rotuladores doble punta x36 Nuwa" />
-        <br /><br />
-        Rotuladores doble punta x36 Nuwa
+
+      <div class="card col-xl-3 col-md-6 col-sm-12" style="width: 18rem;">
+        <img src="../imagenes/4.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Rotuladores Nuwa</h5>
+          <p class="card-text">Edicion Disney de doble punta (Biselada-redonda) ,contiene 24 rotuladores</p>
+          <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
       </div>
-      <div>
-        <img src="../imagenes/5.jpg" alt="Bitacoras A5 60h 150gr" />
-        <br /><br />
-        Bitacoras A5 60h 150gr
+
+      <div class="card col-xl-3 col-md-6 col-sm-12" style="width: 18rem;">
+        <img src="../imagenes/5.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Bitacoras</h5>
+          <p class="card-text">Especial para dibujo,con papel liso de 150gr y de 60 hojas (aniilado arriba o abajo)</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
       </div>
-      <div>
-        <img src="../imagenes/7.jpg" alt="Sharpie Note x24" /> <br /><br />
-        Sharpie Note x24
+
+      <div class="card col-xl-3 col-md-6 col-sm-12" style="width: 18rem;">
+        <img src="../imagenes/7.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Sharpie Note</h5>
+          <p class="card-text">Marcadores al agua de 24 unidades de trazo biselado (subraya y resalta)</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
       </div>
+
+    </div>
+
     </main>
-    <img src="../imagenes/wsp icono.png" alt="boton de wsp" class="botonWsp" />
+    <img src="../imagenes/wsp icono.png" alt="boton de wsp" class="wsp"/>
     <section>
-      <img src="../imagenes/logo menu.png" alt="logo" class="logoMenu" />
+      <img src="../imagenes/logo menu.png" alt="logo" class="logo"/>
     </section>
     <footer>
       <h2>Todos los derechos reservados 2022</h2>
@@ -66,6 +109,6 @@
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"
-  ></script>
+    ></script>
   </body>
 </html>

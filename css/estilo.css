@@ -1,125 +1,77 @@
-/* tipografia del logo Berlin Sans FB */
-
-#principal {
-    text-align: center;
-    position: relative;
-    font-family:"miFuente";
-    
-        
-}
 
 @font-face {
-    font-family:"miFuente";
+    font-family: miFuente;
     src: url(../fuente/Berlin\ Sans\ FB\ Regular.ttf);
 }
 
-
-.galeria {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    font-size: 24px;
+.carrosuleDelinicio {
+    width: 120px;
+    height: 120px;
+    margin: 2px;
+    padding: 2px;   
 }
 
-img {
-    max-width: 30rem;
-    max-height: 30rem;
-    
-}
-
-@media (min-width:480px) {
-.productosGrid {
+body {
+    font-family: miFuente;
     display: grid;
-    grid-template-columns: 80px;
     grid-template-areas:
     "section nav"
     "header header"
+    "div div"
     "main main"
-    "footer footer"
-    ;   
-    }
-    .contenedorGrid {
-        display: grid;
-        grid-template-columns: 80px;
-        grid-template-areas:
-        "section nav"
-        "header header"
-        "div div"
-        "main main"
-        "footer footer";
-        
-    }
-}
-
-
-a {
-    text-decoration: none;
-    border: 2px solid black;
-    margin: 5px;
-    padding: 10px;
-    color: black;
-    border-radius: 8px;
-}
-
-ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-end;
+    "footer footer";
+    grid-template-columns: 80px;
+    grid-template-rows: 60px;
 }
 
 header {
-    background-color: aqua;
     grid-area: header;
-    padding: 10px;
+    background-color: cadetblue;
 }
 
 nav {
-    background-image: linear-gradient(to right, #000000, #361420, #69193b, #9f1859, #d90879);
     grid-area: nav;
-    padding: 10px;
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    
+    background-image: linear-gradient(to right, #000000, #47112c, #890561, #c900a7, #ff00ff);
+    font-size: 24px;
+}
+
+
+.color {
+    color: white;
 }
 
 main {
-    background-color:coral;
     grid-area: main;
-    padding: 10px;
-
+    background-color: bisque;
 }
 
 footer {
-    background-color: chartreuse;
     grid-area: footer;
-    padding: 10px;
+    background-color: aqua;
+}
+
+div {
+    grid-area: div;
 }
 
 section {
-    background-color:#000000;
     grid-area: section;
-    display: flex;
-    justify-content: center; 
-    
+    background-color: #000000;
 }
 
-.botonWsp {
-    max-width: 3rem;
-    max-height: 3rem;
-    border-radius: 50%;
+.wsp {
+    max-width: 6%;
+    max-height: 6%;
     position: fixed;
-    bottom: 15px;
-    right: 15px;
-
+    bottom: 4%;
+    right: 2%;
+    border-radius: 50%;
 }
 
-.logoMenu {
-    max-width: 5rem;
-    max-height: 5rem;
-    top: 50%;
+.logo {
     display: flex;
-    align-content: center;
-    
+    justify-content: center;
+    align-items:center;
+    max-width: 5rem;
+    max-width: 5rem;    
 }
