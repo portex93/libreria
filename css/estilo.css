@@ -1,77 +1,51 @@
-
-@font-face {
-    font-family: miFuente;
-    src: url(../fuente/Berlin\ Sans\ FB\ Regular.ttf);
-}
-
-.carrosuleDelinicio {
-    width: 120px;
-    height: 120px;
-    margin: 2px;
-    padding: 2px;   
-}
-
 body {
-    font-family: miFuente;
-    display: grid;
-    grid-template-areas:
-    "section nav"
-    "header header"
-    "div div"
-    "main main"
-    "footer footer";
-    grid-template-columns: 80px;
-    grid-template-rows: 60px;
-}
-
-header {
+  font-family: miFuente;
+  display: grid;
+  grid-template-areas: "section nav" "header header" "div div" "main main" "footer footer";
+  grid-template-columns: 80px;
+  grid-template-rows: 60px; }
+  body header {
     grid-area: header;
-    background-color: cadetblue;
-}
-
-nav {
+    background-color: cadetblue; }
+  body nav {
     grid-area: nav;
     background-image: linear-gradient(to right, #000000, #47112c, #890561, #c900a7, #ff00ff);
-    font-size: 24px;
-}
-
-
-.color {
-    color: white;
-}
-
-main {
+    font-size: 24px; }
+    body nav .color {
+      color: white; }
+  body main {
     grid-area: main;
-    background-color: bisque;
-}
-
-footer {
-    grid-area: footer;
-    background-color: aqua;
-}
-
-div {
-    grid-area: div;
-}
-
-section {
+    background-color: bisque; }
+  body div {
+    grid-area: div; }
+    body div .boton {
+      width: 5rem;
+      height: 5rem;
+      background-color: green;
+      margin-top: 8%;
+      margin-left: 0.5%;
+      margin-right: 0.5%; }
+  body section {
     grid-area: section;
-    background-color: #000000;
-}
-
-.wsp {
+    background-color: #000000; }
+    body section .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 5rem;
+      max-width: 5rem; }
+  body .wsp {
     max-width: 6%;
     max-height: 6%;
     position: fixed;
     bottom: 4%;
     right: 2%;
-    border-radius: 50%;
-}
-
-.logo {
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    max-width: 5rem;
-    max-width: 5rem;    
-}
+    border-radius: 50%; }
+  body .carrosuleDelinicio {
+    width: 120px;
+    height: 120px;
+    margin: 2px;
+    padding: 2px; }
+  body footer {
+    grid-area: footer;
+    background-color: aqua; }
